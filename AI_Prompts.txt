@@ -1,0 +1,11 @@
+These are the AI prompts that were used with ChatGPT:
+
+look through this java project and tell me which classes i should focus on testing for the best coverage
+
+write junit 5 tests for all the engine classes. try to get high branch coverage and catch bugs, but keep the code pretty simple and use parameterized tests where they make sense
+
+now do the same for the rules classes. make sure to test edge cases and not just normal inputs. also this time don't generate files just output them here so I can use them easier
+
+do the same for the model classes and DungeonFactory. don't add unnecessary tests but try to cover all the important methods
+
+review all the tests you made and make sure they actually match the methods and behavior in the original project. don't change the main code
