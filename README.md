@@ -2,6 +2,14 @@
 
 A deterministic Java 17 Maven backend project designed for students to write JUnit tests.
 
+## Running test requirements
+In order to run mutation tests with pitest you must set your java version to jdk-21.012.1 which can be installed from java. Why? Because if everything worked on the newest version then life would be too easy.
+Once installed, run:
+
+set "PATH=C:\Program Files\Java\jdk-21.0.12.1\bin;%PATH:C:\ProgramData\Oracle\Java\javapath;=%"
+
+in your terminal which will temporarily set the java path to that version in that terminal instance.
+
 ## Goal
 Recover the **Lost Gradebook** and defeat the **Final Exam Phantom**.
 

@@ -9,3 +9,74 @@ now do the same for the rules classes. make sure to test edge cases and not just
 do the same for the model classes and DungeonFactory. don't add unnecessary tests but try to cover all the important methods
 
 review all the tests you made and make sure they actually match the methods and behavior in the original project. don't change the main code
+
+///////
+
+AI prompts from DeepSeek:
+
+n-surefire-plugin:3.2.5:test (default-test) on project haunted-university-basement: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test failed: Plugin org.apache.maven.plugins:maven-surefire-plugin:3.2.5 or one of its dependencies could not be resolved:
+[ERROR]         Failed to read artifact descriptor for org.apache.maven.surefire:maven-surefire-common:jar:3.2.5
+
+//fixed pom file
+
+[ERROR] Failed to execute goal org.pitest:pitest-maven:1.17.4:mutationCoverage (default-cli) on project haunted-university-basement: Execution default-cli of goal org.pitest:pitest-maven:1.17.4:mutationCoverage failed: No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+
+//fixed pom file again
+
+Execution default-cli of goal org.pitest:pitest-maven:1.17.4:mutationCoverage failed: Please check you have correctly installed the pitest plugin for your project's test library (JUnit 5, TestNG, JUnit 4 etc). 
+[ERROR]
+[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
+[ERROR] VM : OpenJDK 64-Bit Server VM
+[ERROR] Vendor : Eclipse Adoptium
+[ERROR] Version : 25.0.4.1+1-LTS
+[ERROR] Uptime : 20927
+[ERROR] Input -> 
+[ERROR]  1 : -Dclassworlds.conf=C:\Users\mlimp\Documents\apache-maven-3.10.1\bin\m2.conf
+[ERROR]  2 : -Dmaven.home=C:\Users\mlimp\Documents\apache-maven-3.10.1
+[ERROR]  3 : -Dmaven.multiModuleProjectDirectory=C:\Users\mlimp\CS3330-Assignment3
+[ERROR] BootClassPathSupported : false
+[ERROR]
+[ERROR]
+[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
+[ERROR] VM : OpenJDK 64-Bit Server VM
+[ERROR] Vendor : Eclipse Adoptium
+[ERROR] Version : 25.0.4.1+1-LTS
+[ERROR] Uptime : 20929
+[ERROR] Input -> 
+[ERROR]  1 : -Dclassworlds.conf=C:\Users\mlimp\Documents\apache-maven-3.10.1\bin\m2.conf
+[ERROR]  2 : -Dmaven.home=C:\Users\mlimp\Documents\apache-maven-3.10.1
+[ERROR]  3 : -Dmaven.multiModuleProjectDirectory=C:\Users\mlimp\CS3330-Assignment3
+[ERROR] BootClassPathSupported : false
+[ERROR]
+
+//jdk version error
+
+[ERROR] Failed to execute goal org.pitest:pitest-maven:1.17.4:mutationCoverage (default-cli) on project haunted-university-basement: Execution default-cli of goal org.pitest:pitest-maven:1.17.4:mutationCoverage failed: Coverage generation minion exited abnormally! (UNKNOWN_ERROR)
+[ERROR]
+[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
+[ERROR] VM : Java HotSpot(TM) 64-Bit Server VM
+[ERROR] Vendor : Oracle Corporation
+[ERROR] Version : 21.0.12.1+1-LTS-4
+[ERROR] Uptime : 16809
+[ERROR] Input -> 
+[ERROR]  1 : -Dclassworlds.conf=C:\Users\mlimp\Documents\apache-maven-3.10.1\bin\m2.conf
+[ERROR]  2 : -Dmaven.home=C:\Users\mlimp\Documents\apache-maven-3.10.1
+[ERROR]  3 : -Dmaven.multiModuleProjectDirectory=C:\Users\mlimp\CS3330-Assignment3
+[ERROR] BootClassPathSupported : false
+[ERROR]
+[ERROR]
+[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
+[ERROR] VM : Java HotSpot(TM) 64-Bit Server VM
+[ERROR] Vendor : Oracle Corporation
+[ERROR] Version : 21.0.12.1+1-LTS-4
+[ERROR] Uptime : 16811
+[ERROR] Input -> 
+[ERROR]  1 : -Dclassworlds.conf=C:\Users\mlimp\Documents\apache-maven-3.10.1\bin\m2.conf
+[ERROR]  2 : -Dmaven.home=C:\Users\mlimp\Documents\apache-maven-3.10.1
+[ERROR]  3 : -Dmaven.multiModuleProjectDirectory=C:\Users\mlimp\CS3330-Assignment3
+[ERROR] BootClassPathSupported : false
+
+//more version errors or something
+//switched to ChatGPT
+
+inputted the pom file and said "fix this"
