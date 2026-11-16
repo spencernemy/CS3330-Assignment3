@@ -7,6 +7,7 @@ In order to run mutation tests with pitest you must set your java version to jdk
 Once installed, run:
 
 set "PATH=C:\Program Files\Java\jdk-21.0.12.1\bin;%PATH:C:\ProgramData\Oracle\Java\javapath;=%"
+(assuming that the path set is in fact the correct one)
 
 in your terminal which will temporarily set the java path to that version in that terminal instance.
 
